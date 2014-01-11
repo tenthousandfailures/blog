@@ -2,11 +2,11 @@ See the URL for more
 <https://tenthousandfailures.squarespace.com/blog/>
 
 COMMAND LINES FOR QUESTA
-> qverilog +cover covmerge1.sv -R -coverage -gui -do "run -all"
-> qverilog +cover covmerge2.sv -R -coverage -gui -do "run -all"
-> qverilog +cover covmerge3.sv -R -coverage -gui -do "run -all"
-> qverilog +cover covmerge4.sv -R -coverage -gui -do "run -all"
-> qverilog +cover covmerge5.sv -R -coverage -gui -do "run -all"
+ > qverilog +cover covmerge1.sv -R -coverage -gui -do "run -all"
+ > qverilog +cover covmerge2.sv -R -coverage -gui -do "run -all"
+ > qverilog +cover covmerge3.sv -R -coverage -gui -do "run -all"
+ > qverilog +cover covmerge4.sv -R -coverage -gui -do "run -all"
+ > qverilog +cover covmerge5.sv -R -coverage -gui -do "run -all"
 
 covmerge1.sv
 covergroup defined outside of dut merge instances
