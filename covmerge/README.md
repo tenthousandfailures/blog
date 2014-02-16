@@ -1,5 +1,5 @@
 See the URL for more
-<https://tenthousandfailures.squarespace.com/blog/>
+<https://tenthousandfailures.com/blog/>
 
 COMMAND LINES FOR QUESTA
  > qverilog +cover covmerge1.sv -R -coverage -gui -do "run -all"
