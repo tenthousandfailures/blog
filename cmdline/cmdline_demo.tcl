@@ -1,7 +1,15 @@
+package require cmdline
 
-# package require cmdline
-source /usr/share/tcltk/tcllib1.14/cmdline/cmdline.tcl
+# if the above does not work you could point to the location of cmdline.tcl
+# it would mean you do not have the cmdline library available
+# source /usr/share/tcltk/tcllib1.14/cmdline/cmdline.tcl
 # source cmdline.tcl
+
+# based on example first featured on Hai's Blog
+# http://wuhrr.wordpress.com/2009/09/13/parse-command-line-in-a-tcl-script/
+
+# revised for use inside a TCL intrepreter and explained on Ten Thousdand Failures
+# https://tenthousandfailures.squarespace.com/blog/2014/3/16/using-tcl-cmdline-library-with-interactive-tools
 
 namespace eval ::cmdline_demo {
 }
