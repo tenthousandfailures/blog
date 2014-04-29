@@ -19,10 +19,9 @@ endmodule
 
 module tb ();
 
-    bit clk;
-    bit x = 0;   
+    bit clk = 0;
 
-    dut duta(x, clk);
+    dut duta(1'h0, clk);
     dut dutb(1'h1, clk);
     
     initial begin
@@ -31,13 +30,14 @@ module tb ();
         #10;
         clk = 0;
         #10;
-
+        clk = 1;
+        #10
+        
         $finish();
         
     end       
     
-    always @(clk) begin
-        x = 0;
+    always @(posedge clk) begin
         duta.c1_cg_inst.sample();
         dutb.c1_cg_inst.sample();
     end
