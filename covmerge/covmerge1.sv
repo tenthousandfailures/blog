@@ -25,16 +25,11 @@ module tb ();
     dut dutb(1'h1, clk);
     
     initial begin
-        #10;
-        clk = 1;
-        #10;
-        clk = 0;
-        #10;
-        clk = 1;
+        #10; clk = 1;
+        #10; clk = 0;
+        #10; clk = 1;
         #10
-
-        $finish();
-        
+        $finish();       
     end       
     
     always @(posedge clk) begin
