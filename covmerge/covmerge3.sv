@@ -14,7 +14,11 @@ module dut (input bit x, input bit clk);
     endgroup
         
     c1_cg c1_cg_inst = new(x);
-
+    
+    always @(posedge clk) begin
+        c1_cg_inst.sample();
+    end
+    
 endmodule
 
 module tb ();
@@ -31,10 +35,5 @@ module tb ();
         #10    
         $finish();
     end       
-    
-    always @(posedge clk) begin
-        duta.c1_cg_inst.sample();
-        dutb.c1_cg_inst.sample();
-    end
        
 endmodule
