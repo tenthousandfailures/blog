@@ -3,7 +3,6 @@ module dut (input bit x, input bit clk);
     covergroup c1_cg (ref bit x);
         
         option.per_instance = 1;
-        option.get_inst_coverage = 1;
         type_option.merge_instances = 1;
         
         x : coverpoint x {

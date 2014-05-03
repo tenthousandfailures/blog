@@ -1,7 +1,6 @@
 covergroup c1_cg (ref bit x);
     
     option.per_instance = 0;
-    option.get_inst_coverage = 0;
     type_option.merge_instances = 1;
 
     x : coverpoint x {
