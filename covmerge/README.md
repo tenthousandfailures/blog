@@ -1,7 +1,13 @@
 See the URL for more
 <https://tenthousandfailures.com/blog/>
 
-# COMMAND LINES FOR QUESTA
+Source code for posts on the tenthousandfailures.com blog and for the paper "Merging System Verilog Covergroups by Example".
+
+Licensed under the GNU General Public License v2 see LICENSE.txt for more details.
+
+Written by Eldon Nelson
+
+## Command Lines for Mentor Questa to Run
 ```shell
  > qverilog +cover union_merge.sv -R -coverage -gui -do "run -all"
  > qverilog +cover weighted_merge.sv -R -coverage -gui -do "run -all"
@@ -10,23 +16,18 @@ See the URL for more
  > qverilog +cover efficient_merge.sv -R -coverage -gui -do "run -all"
 ```
 
-* union_merge.sv
+## union_merge.sv
+covergroup defined outside of dut union merge with instances
 
-covergroup defined outside of dut merge instances
+## weighted_merge.sv
+covergroup defined outside of dut weighted average merge with instances
 
-* weighted_merge.sv
+## module_merge.sv
+covergroup defined inside of dut instance coverage only try merge
 
-covergroup defined outside of dut no merge instances
+## covmerge4.sv
+covergroup defined inside of dut instance coverage only no merge
 
-* module_merge.sv
-
-covergroup defined inside of dut merge instances
-
-* covmerge4.sv
-
-covergroup defined inside of dut no merge instances
-
-* efficient_merge.sv
-
-covergroup defined outside of dut merge but per_instance is 0
+## efficient_merge.sv
+covergroup defined outside of dut union merge with no instances
 
