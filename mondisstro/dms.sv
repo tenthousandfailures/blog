@@ -14,7 +14,8 @@ module dut;
         #100;
         {a,b} = 2'b11;
         c = 0;
-        #1000 $finish;
+        #1000;
+        $finish;
     end // block: abc
 
     initial begin : ext
