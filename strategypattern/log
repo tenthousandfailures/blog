@@ -1,0 +1,55 @@
+QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+Start time: 20:35:08 on Jul 13,2014
+vlog -sv -mfcu -pedanticerrors FlyBehavior.sv FlyWithWings.sv FlyNoWay.sv QuackBehavior.sv Quack.sv MuteQuack.sv Squeak.sv Duck.sv MallardDuck.sv DecoyDuck.sv RubberDuck.sv ModelDuck.sv MiniDuckSimulator.sv 
+-- Compiling package FlyBehavior_sv_unit
+-- Compiling module tb
+
+Top level modules:
+	tb
+End time: 20:35:08 on Jul 13,2014, Elapsed time: 0: 0: 0
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 10.3a
+
+# vsim -do "run -all" -c tb
+# Start time: 20:35:09 on Jul 13,2014
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim
+# //  Version 10.3a linux Apr 13 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading work.FlyBehavior_sv_unit(fast)
+# Loading work.tb(fast)
+# run -all
+# 
+# mallard:
+# I'm a real Mallard duck
+# I'm flying
+# Quack
+# 
+# decoy:
+# I'm a duck Decoy
+# I can't fly
+# << Silence >>
+# 
+# rubberDuckie:
+# I'm a rubber duckie
+# I can't fly
+# Squeak
+# 
+# model:
+# I'm a model duck
+# I can't fly
+# Quack
+# ** Note: $finish    : MiniDuckSimulator.sv(35)
+#    Time: 1 ns  Iteration: 0  Instance: /tb
+# End time: 20:35:10 on Jul 13,2014, Elapsed time: 0: 0: 1
+# Errors: 0, Warnings: 0
