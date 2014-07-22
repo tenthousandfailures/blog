@@ -1,4 +1,4 @@
-## Strategy Pattern in SystemVerilog Example
+## Strategy Pattern implemented in SystemVerilog Example
 
 See the URL for more
 <https://tenthousandfailures.com/blog/>
